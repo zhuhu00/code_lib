@@ -14,3 +14,9 @@
 [submodule "gtsam"]
 	path = gtsam
 	url = https://github.com/borglab/gtsam.git
+[submodule "catkin_kinect2/src/iai_kinect2"]
+	path = catkin_kinect2/src/iai_kinect2
+	url = https://github.com/code-iai/iai_kinect2.git
+[submodule "ceres-solver"]
+	path = ceres-solver
+	url = https://github.com/ceres-solver/ceres-solver.git
