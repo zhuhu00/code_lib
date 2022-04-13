@@ -6,7 +6,6 @@
 [submodule "Azure-Kinect-ROS-Driver"]
 	path = catkin_azure_kinect/src/Azure_Kinect_ROS_Driver
 	url = https://github.com/microsoft/Azure_Kinect_ROS_Driver.git
-	branch = melodic
 
 [submodule "eigen"]
 	path = eigen
