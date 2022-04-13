@@ -2,3 +2,10 @@
 	path = Azure-Kinect-Sensor-SDK
 	url = https://github.com/microsoft/Azure-Kinect-Sensor-SDK.git
 	tag = v1.4.1
+
+[submodule "Azure-Kinect-ROS-Driver"]
+	path = catkin_azure_kinect/src
+	url = https://github.com/microsoft/Azure_Kinect_ROS_Driver.git
+	branch = melodic
+
+
