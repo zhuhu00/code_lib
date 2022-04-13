@@ -4,8 +4,25 @@
 	tag = v1.4.1
 
 [submodule "Azure-Kinect-ROS-Driver"]
-	path = catkin_azure_kinect/src
+	path = catkin_azure_kinect/src/Azure_Kinect_ROS_Driver
 	url = https://github.com/microsoft/Azure_Kinect_ROS_Driver.git
 	branch = melodic
 
+[submodule "eigen"]
+	path = eigen
+	url = https://gitlab.com/libeigen/eigen.git
+	branch = 3.3.0
 
+[submodule "GTSAM"]
+	path = gtsam
+	url = https://github.com/borglab/gtsam.git
+	branch = 4.1.1
+
+[submodule "Kinect2-ROS"]
+	path = catkin_kinect2/src/iai_kinect2
+	url = https://github.com/code-iai/iai_kinect2.git
+
+[submodule "Ceres-Solver"]
+	path = ceres
+	url = https://github.com/ceres-solver/ceres-solver.git
+	tag = 1.14.0
