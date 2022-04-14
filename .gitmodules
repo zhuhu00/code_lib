@@ -35,3 +35,12 @@
 [submodule "glog"]
 	path = glog
 	url = https://github.com/google/glog.git
+[submodule "libfreenect2"]
+	path = libfreenect2
+	url = https://github.com/OpenKinect/libfreenect2.git
+[submodule "Livox-SDK"]
+	path = Livox-SDK
+	url = https://github.com/Livox-SDK/Livox-SDK.git
+[submodule "opencv-3.4"]
+	path = opencv-3.4
+	url = https://github.com/opencv/opencv.git
