@@ -44,3 +44,6 @@
 [submodule "opencv-3.4"]
 	path = opencv-3.4
 	url = https://github.com/opencv/opencv.git
+[submodule "opencv_contrib"]
+	path = opencv_contrib
+	url = https://github.com/opencv/opencv_contrib.git
