@@ -53,3 +53,6 @@
 [submodule "thrust"]
 	path = thrust
 	url = https://github.com/NVIDIA/thrust.git
+[submodule "catkin_livox/src/livox_ros_driver"]
+	path = catkin_livox/src/livox_ros_driver
+	url = https://github.com/Livox-SDK/livox_ros_driver.git
