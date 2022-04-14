@@ -24,4 +24,9 @@ git push
 |ceres-solver| 1.14.0||
 |GTSAM|4.1.1||
 |Kinect2-ROS|melodic||
+|realsense-ros|2.3.2||
+|CMake|3.16.4|需要解压，见[安装](https://blog.csdn.net/aian2132/article/details/107978876)|
+|doxygen|Release_1_9_3||
+|gflags|v2.2.2||
+|glog|v0.5.0||
 
