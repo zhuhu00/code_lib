@@ -47,3 +47,9 @@
 [submodule "opencv_contrib"]
 	path = opencv_contrib
 	url = https://github.com/opencv/opencv_contrib.git
+[submodule "Pangolin"]
+	path = Pangolin
+	url = https://github.com/stevenlovegrove/Pangolin.git
+[submodule "thrust"]
+	path = thrust
+	url = https://github.com/NVIDIA/thrust.git
