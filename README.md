@@ -34,7 +34,14 @@ git push
 |Pangolin|v0.6||
 |thrust|1.16.0||
 
-
+# GTSAM
+使用系统自带的eigen版本，避免一些其他错误。
+修改`gtsam/cmake/HandleEigen.cmake`
+```cmake
+option(GTSAM_USE_SYSTEM_EIGEN "Find and use system-installed Eigen. If 'off', use the one bundled with GTSAM" OFF)
+# OFF改为ON
+option(GTSAM_USE_SYSTEM_EIGEN "Find and use system-installed Eigen. If 'off', use the one bundled with GTSAM" ON)
+```
 
 # Opencv编译安装
 方便使用GPU加速
