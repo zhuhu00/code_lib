@@ -29,7 +29,7 @@ git push
 |doxygen|Release_1_9_3||
 |gflags|v2.2.2||
 |glog|v0.5.0||
-|libtorch|cuda102, 1.10.0|[下载地址](https://download.pytorch.org/libtorch/cu102/libtorch-cxx11-abi-shared-with-deps-1.10.0%2Bcu102.zip),[使用教程github](https://github.com/AllentDan/LibtorchTutorials)[使用测试](https://oldpan.me/archives/pytorch-c-libtorch-inference)|
+|libtorch|cuda102, 1.10.0|[下载地址](https://download.pytorch.org/libtorch/cu102/libtorch-cxx11-abi-shared-with-deps-1.10.0%2Bcu102.zip),[使用教程github](https://github.com/AllentDan/LibtorchTutorials)，[使用测试](https://oldpan.me/archives/pytorch-c-libtorch-inference)|
 |Opencv&opencv_contrib|3.4|编译安装见下|
 |Pangolin|v0.6||
 |thrust|1.16.0||
