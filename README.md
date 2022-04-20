@@ -22,7 +22,7 @@ git push
 |Azure-kinect-Sensor & Azure-kinect-**ROS**-Driver|V1.4.1 & Melodic| Azure-kinect-use|
 | eigen3 | 3.3.0||
 |ceres-solver| 1.14.0||
-|GTSAM|4.1.1||
+|GTSAM|4.1.1|[GTSAM学习建议TODO](https://zhuanlan.zhihu.com/p/356968742)|
 |Kinect2-ROS & Kinect2-SDK(libfreenect2)|melodic&||
 |realsense-ros|2.3.2||
 |CMake|3.16.4|需要解压，见[安装](https://blog.csdn.net/aian2132/article/details/107978876)|
