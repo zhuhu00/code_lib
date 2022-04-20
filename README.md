@@ -33,6 +33,7 @@ git push
 |Opencv&opencv_contrib|3.4|编译安装见下|
 |Pangolin|v0.6||
 |thrust|1.16.0||
+|**backward-cpp**|强烈推荐|(再也不用担心Segment Fault!)[https://zhuanlan.zhihu.com/p/397148839]|
 
 # GTSAM
 使用系统自带的eigen版本，避免一些其他错误。
