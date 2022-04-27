@@ -41,12 +41,7 @@
 [submodule "Livox-SDK"]
 	path = Livox-SDK
 	url = https://github.com/Livox-SDK/Livox-SDK.git
-[submodule "opencv-3.4"]
-	path = opencv-3.4
-	url = https://github.com/opencv/opencv.git
-[submodule "opencv_contrib"]
-	path = opencv_contrib
-	url = https://github.com/opencv/opencv_contrib.git
+
 [submodule "Pangolin"]
 	path = Pangolin
 	url = https://github.com/stevenlovegrove/Pangolin.git
@@ -56,3 +51,9 @@
 [submodule "catkin_livox/src/livox_ros_driver"]
 	path = catkin_livox/src/livox_ros_driver
 	url = https://github.com/Livox-SDK/livox_ros_driver.git
+[submodule "opencv"]
+	path = opencv
+	url = https://github.com/opencv/opencv.git
+[submodule "opencv_contrib"]
+	path = opencv_contrib
+	url = https://github.com/opencv/opencv_contrib.git
