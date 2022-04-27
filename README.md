@@ -77,5 +77,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
 sudo make -j$(nproc)
 sudo make install
 ```
+
+https://blog.csdn.net/weixin_51925771/article/details/121120677
 ### 参考
 - https://www.nanguoyu.com/opencv4-5-1-gpu
