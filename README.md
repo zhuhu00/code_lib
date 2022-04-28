@@ -78,6 +78,7 @@ sudo make -j$(nproc)
 sudo make install
 ```
 
-https://blog.csdn.net/weixin_51925771/article/details/121120677
+ubuntu18.04 opencv3.2.0 with cuda10.2：https://blog.csdn.net/weixin_51925771/article/details/121120677
+ubuntu 18.04 安装opencv3.2.0的坑：https://blog.csdn.net/dbdxnuliba/article/details/106895321
 ### 参考
 - https://www.nanguoyu.com/opencv4-5-1-gpu
