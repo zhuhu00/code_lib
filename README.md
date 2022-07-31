@@ -1,4 +1,63 @@
-# code_lib
+# Ubuntu的工具记录
+### 1. 安装terminator
+```
+sudo apt-get install terminator
+```
+之后创建目录：
+```
+mkdir ~/.config/terminator
+gedit ~/.config/terminator/config
+```
+粘贴下列内容
+```
+[global_config]
+  title_font = Ubuntu Mono 11[keybindings]
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child1]]]
+      parent = window0
+      type = Terminal
+    [[[window0]]]
+      parent = ""
+      size = 1200, 600
+      type = Window
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#002b36"
+    background_darkness = 0.91
+    background_image = None
+    background_type = transparent
+    font = Ubuntu Mono 15
+    foreground_color = "#e0f0f1"
+    show_titlebar = False
+    use_system_font = False
+```
+### 2. mavros pcl
+```
+sudo apt-get install ros-noetic-mavros*
+sudo apt-get install ros-noetic-pcl*
+sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
+```
+### 3. 录屏软件`simplescreenrecorder`，截图软件`flameshot`
+```
+sudo apt-get install simplescreenrecorder
+```
+```
+sudo apt-get install flameshot
+```
+截图软件可以在设置里面添加快捷键，方便截图，设置如下：
+
+### 4. 搜狗 / google输入法
+搜狗：https://shurufa.sogou.com/linux
+google输入法：TBA
+
+### 5. 
+
+
+
+# 一些编译所需的依赖code_lib
 Personal code_lib for compile libraries in Ubuntu 18.04(之后会在20.04上测试)
 
 # 怎么添加子模块?
