@@ -40,7 +40,8 @@ sudo apt-get install ros-noetic-mavros*
 sudo apt-get install ros-noetic-pcl*
 sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
 ```
-### 3. 录屏软件`simplescreenrecorder`，截图软件`flameshot`
+### 3. 录屏软件`simplescreenrecorder`，截图软件`flameshot`，截动图软件`peek`
+
 ```
 sudo apt-get install simplescreenrecorder
 ```
@@ -49,13 +50,48 @@ sudo apt-get install flameshot
 ```
 截图软件可以在设置里面添加快捷键，方便截图，设置如下：
 
+![image-20220731104214478](https://raw.githubusercontent.com/zhuhu00/img/master/20220731104214.png)
+
+截动图软件：peek
+
+1. Add the Peek stable PPA:
+
+   ```
+   sudo add-apt-repository ppa:peek-developers/stable
+   ```
+
+2. Then check updates and install peek via commands:
+
+```
+sudo apt-get update
+
+sudo apt-get install peek	
+```
+
 ### 4. 搜狗 / google输入法
+
 搜狗：https://shurufa.sogou.com/linux
 google输入法：TBA
 
-### 5. 
+### 5. Typora+github图床
 
+TBA
 
+### 6. Backward CPP
+
+参考下面库的用法
+
+```
+ sudo apt-get install libdw-dev 
+```
+
+随后下载头文件 https://raw.githubusercontent.com/bombela/backward-cpp/master/backward.hpp 复制到根目录 `sudo mv backward.hpp /usr/include` 在`CmakeLists.txt->target_link_lib` 后面加个 "dw"
+
+### 7. VSCode编译调试ROS
+
+见[vscode_catkin_ws](https://github.com/zhuhu00/vscode_catkin_ws)仓库
+
+参考：https://github.com/edmundwsy/vscode-ros-config
 
 # 一些编译所需的依赖code_lib
 Personal code_lib for compile libraries in Ubuntu 18.04(之后会在20.04上测试)
