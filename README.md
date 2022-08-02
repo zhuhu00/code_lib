@@ -1,4 +1,42 @@
 # Ubuntu的工具记录
+### 0.ZSH install
+1）安装zsh
+```bash
+sudo apt-get update
+sudo apt-get install cmake git zsh
+```
+
+2）安装ohmyzsh
+```bash
+sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+```
+3）安装插件
+```bash
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+4）修改zshrc
+```
+gedit ~/.zshrc
+```
+
+在文件中添加
+```shell
+plugins=(git
+zsh-autosuggestions
+zsh-syntax-highlighting
+)
+alias ezs="gedit ~/.zshrc"
+alias szs="source ~/.zshrc"
+alias sss="source devel/setup.zsh"
+
+# source /opt/ros/melodic/setup.zsh
+# export PATH=~/anaconda3/bin:$PATH
+
+setopt no_nomatch # 允许使用 *缺省
+```
+
 ### 1. 安装terminator
 ```
 sudo apt-get install terminator
@@ -177,3 +215,4 @@ ubuntu18.04 opencv3.2.0 with cuda10.2：https://blog.csdn.net/weixin_51925771/ar
 ubuntu 18.04 安装opencv3.2.0的坑：https://blog.csdn.net/dbdxnuliba/article/details/106895321
 ### 参考
 - https://www.nanguoyu.com/opencv4-5-1-gpu
+- https://github.com/zfc-zfc/install_ubuntu
