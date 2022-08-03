@@ -131,6 +131,10 @@ TBA
 
 参考：https://github.com/edmundwsy/vscode-ros-config
 
+### 8. 远程软件
+nomachine：https://www.nomachine.com/download
+
+
 # 一些编译所需的依赖code_lib
 Personal code_lib for compile libraries in Ubuntu 18.04(之后会在20.04上测试)
 
@@ -148,6 +152,7 @@ git push
 ```
 
 子模块更新:`git submodule update --init --recursive`
+
 
 # 已有的库
 |Libraries|Version|Descriptions
