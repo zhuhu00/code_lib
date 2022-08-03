@@ -1,5 +1,5 @@
 # Ubuntu的工具记录
-### 0.ZSH install
+### 0. ZSH install
 1）安装zsh
 ```bash
 sudo apt-get update
@@ -133,6 +133,34 @@ TBA
 
 ### 8. 远程软件
 nomachine：https://www.nomachine.com/download
+
+### 9. Ubuntu 共享文件夹
+需要安装Samba软件：`sudo apt install -y samba`，可以用`samba -V`查看版本
+
+1、新建共享文件夹
+
+获取root权限，或者登陆root账户。可在/home文件夹（或其它文件夹）下新建一个文件夹，如下面的。不用root权限也可以，后面会自动分配
+
+![2022-08-03-15-32-14](https://raw.githubusercontent.com/zhuhu00/img/master/2022-08-03-15-32-14.png)
+
+两个选项共享文件夹的`别名`以及是否允许`生成和删除文件`
+
+2、设置samba的用户名，
+
+`sudo smbpasswd -a username # username为访问的用户名`，可以是本机的，然后就开始设置密码了。
+
+设置完密码，设置共享文件夹的用户权限：
+`sudo chown username /home/xxx`
+
+3、连接
+
+ubuntu连接是
+
+![2022-08-03-15-44-13](https://raw.githubusercontent.com/zhuhu00/img/master/2022-08-03-15-44-13.png)
+写上`ip/xxx`，如`smb://192.168.1.102/Handheld_ws`，前面是ip的地址，后面是文件夹的名字，这样就能实现文件夹共享了。
+
+而在Windows下面，则需要新建网络位置,之后输入的地址还是一样的ip+文件别名，只是这里只需要`//192.168.1.102/Handheld_ws`
+
 
 
 # 一些编译所需的依赖code_lib
