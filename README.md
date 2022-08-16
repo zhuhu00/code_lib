@@ -159,8 +159,24 @@ ubuntu连接是
 ![2022-08-03-15-44-13](https://raw.githubusercontent.com/zhuhu00/img/master/2022-08-03-15-44-13.png)
 写上`ip/xxx`，如`smb://192.168.1.102/Handheld_ws`，前面是ip的地址，后面是文件夹的名字，这样就能实现文件夹共享了。
 
-而在Windows下面，则需要新建网络位置,之后输入的地址还是一样的ip+文件别名，只是这里只需要`//192.168.1.102/Handheld_ws`
+而在Windows下面，则需要新建网络位置,之后输入的地址还是一样的ip+文件别名，只是这里只需要`\\192.168.1.102\Handheld_ws`
 
+### samba和linux用户查看及删除
+
+查看samba服务器中已拥有哪些用户：
+`sudo pdbedit -L`
+
+删除samba服务中的某个用户`smbpasswd -x   用户名`
+ 
+查看Linux中所有用户：`cat  /etc/passwd`
+
+查看Linux中添加了多少用户：`cat /etc/passwd|grep -v nologin|grep -v halt|grep -v shutdown|awk-F":" '{ print $1"|"$3"|"$4 }'|more`
+
+查看Linux中所有组：`cat  /etc/group`
+
+删除linux某个用户: `userdel   用户名`
+
+删除linux中某个用户所有信息:`userdel   -r  用户名`
 
 
 # 一些编译所需的依赖code_lib
