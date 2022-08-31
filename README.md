@@ -1,5 +1,5 @@
 # Ubuntu的工具记录
-### 0. ZSH install
+## 0. ZSH install
 1）安装zsh
 ```bash
 sudo apt-get update
@@ -37,7 +37,7 @@ alias sss="source devel/setup.zsh"
 setopt no_nomatch # 允许使用 *缺省
 ```
 
-### 1. 安装terminator
+## 1. 安装terminator
 ```
 sudo apt-get install terminator
 ```
@@ -72,14 +72,14 @@ gedit ~/.config/terminator/config
     show_titlebar = False
     use_system_font = False
 ```
-### 2. mavros pcl ROS
+## 2. mavros pcl ROS
 ROS: www.ros.org
 ```
 sudo apt-get install ros-noetic-mavros*
 sudo apt-get install ros-noetic-pcl*
 sudo ln -s /usr/include/pcl-1.8/pcl /usr/include/pcl
 ```
-### 3. 录屏软件`simplescreenrecorder`，截图软件`flameshot`，截动图软件`peek`
+## 3. 录屏软件`simplescreenrecorder`，截图软件`flameshot`，截动图软件`peek`
 
 ```
 sudo apt-get install simplescreenrecorder
@@ -107,16 +107,16 @@ sudo apt-get update
 sudo apt-get install peek	
 ```
 
-### 4. 搜狗 / google输入法
+## 4. 搜狗 / google输入法
 
 搜狗：https://shurufa.sogou.com/linux
 google输入法：TBA
 
-### 5. Typora+github图床
+## 5. Typora+github图床
 
 TBA
 
-### 6. Backward CPP
+## 6. Backward CPP
 
 参考下面库的用法
 
@@ -126,16 +126,16 @@ TBA
 
 随后下载头文件 https://raw.githubusercontent.com/bombela/backward-cpp/master/backward.hpp 复制到根目录 `sudo mv backward.hpp /usr/include` 在`CmakeLists.txt->target_link_lib` 后面加个 "dw"
 
-### 7. VSCode编译调试ROS
+## 7. VSCode编译调试ROS
 
 见[vscode_catkin_ws](https://github.com/zhuhu00/vscode_catkin_ws)仓库
 
 参考：https://github.com/edmundwsy/vscode-ros-config
 
-### 8. 远程软件
+## 8. 远程软件
 nomachine：https://www.nomachine.com/download
 
-### 9. Ubuntu 共享文件夹
+## 9. Ubuntu 共享文件夹
 需要安装Samba软件：`sudo apt install -y samba`，可以用`samba -V`查看版本
 
 1、新建共享文件夹
@@ -178,6 +178,26 @@ ubuntu连接是
 删除linux某个用户: `userdel   用户名`
 
 删除linux中某个用户所有信息:`userdel   -r  用户名`
+
+## 10. 增加、删除Swap文件
+need **root** permission， add `sudo`
+```shell
+swapon -s （没有显示就说明不存在swap文件）
+
+sudo swapoff /swapfile
+
+dd if=/dev/zero of=/swapfile bs=1MB count=65536 (增加64G的swap空间，64*1024=65536)
+
+mkswap /swapfile（格式化swap空间）
+
+swapon /swapfile （激活swap）
+
+free -m （查看swap空间是否添加上）
+
+# 如果要机器重启的时候自动挂载 Swap ，那么还需要修改 fstab 配置。
+# 用 vim 打开 /etc/fstab 文件，在其最后添加如下一行：
+/swapfile   swap   swap    defaults 0 0
+```
 
 # 一些编译所需的依赖code_lib
 Personal code_lib for compile libraries in Ubuntu 18.04(之后会在20.04上测试)
