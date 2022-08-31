@@ -1,19 +1,11 @@
-# [submodule "eigen"]
-# 	path = eigen
-# 	url = https://gitlab.com/libeigen/eigen.git
 [submodule "gtsam"]
 	path = gtsam
 	url = https://github.com/borglab/gtsam.git
-# [submodule "catkin_kinect2/src/iai_kinect2"]
-# 	path = catkin_kinect2/src/iai_kinect2
-# 	url = https://github.com/code-iai/iai_kinect2.git
+
 [submodule "ceres-solver"]
 	path = ceres-solver
 	url = https://github.com/ceres-solver/ceres-solver.git
 
-# [submodule "catkin_vision_opencv/src/vision_opencv"]
-# 	path = catkin_vision_opencv/src/vision_opencv
-# 	url = https://github.com/ros-perception/vision_opencv.git
 [submodule "doxygen"]
 	path = doxygen
 	url = https://github.com/doxygen/doxygen.git
@@ -28,3 +20,7 @@
 [submodule "thrust"]
 	path = thrust
 	url = https://github.com/NVIDIA/thrust.git
+	
+# [submodule "catkin_livox/src/livox_ros_driver"]
+# 	path = catkin_livox/src/livox_ros_driver
+# 	url = https://github.com/Livox-SDK/livox_ros_driver.git

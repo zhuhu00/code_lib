@@ -72,7 +72,8 @@ gedit ~/.config/terminator/config
     show_titlebar = False
     use_system_font = False
 ```
-### 2. mavros pcl
+### 2. mavros pcl ROS
+ROS: www.ros.org
 ```
 sudo apt-get install ros-noetic-mavros*
 sudo apt-get install ros-noetic-pcl*
@@ -178,10 +179,19 @@ ubuntu连接是
 
 删除linux中某个用户所有信息:`userdel   -r  用户名`
 
-
 # 一些编译所需的依赖code_lib
 Personal code_lib for compile libraries in Ubuntu 18.04(之后会在20.04上测试)
 
+## livox_SDK & ROS driver
+SDK: https://github.com/Livox-SDK/Livox-SDK.git
+ROS driver: 
+```bash
+mkdir -p catkin_livox_ws/src
+cd catkin_livox_ws/src
+git clone https://github.com/Livox-SDK/livox_ros_driver.git
+catkin_make
+```
+add `$(pwd)/devel/setup.zsh` to `~/.zshrc`
 # 怎么添加子模块?
 `git submodule add xxx.git`
 进入子模块后,可以变更branch或者是tag
