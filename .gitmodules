@@ -10,10 +10,6 @@
 	path = doxygen
 	url = https://github.com/doxygen/doxygen.git
 
-[submodule "Livox-SDK"]
-	path = Livox-SDK
-	url = https://github.com/Livox-SDK/Livox-SDK.git
-
 [submodule "Pangolin"]
 	path = Pangolin
 	url = https://github.com/stevenlovegrove/Pangolin.git
