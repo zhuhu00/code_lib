@@ -198,6 +198,10 @@ free -m （查看swap空间是否添加上）
 # 用 vim 打开 /etc/fstab 文件，在其最后添加如下一行：
 /swapfile   swap   swap    defaults 0 0
 ```
+## 11. Docker 使用
+ROS在不同Ubuntu版本的见：https://github.com/zhuhu00/Docker_utils
+还有wechat或者其他的软件docker版本。
+
 
 # 一些编译所需的依赖code_lib
 Personal code_lib for compile libraries in Ubuntu 18.04(之后会在20.04上测试)
