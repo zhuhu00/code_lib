@@ -233,6 +233,27 @@ git push
 
 
 # 已有的库
+```
+[submodule "gtsam"]
+	path = gtsam
+	url = https://github.com/borglab/gtsam.git
+
+[submodule "ceres-solver"]
+	path = ceres-solver
+	url = https://github.com/ceres-solver/ceres-solver.git
+
+[submodule "doxygen"]
+	path = doxygen
+	url = https://github.com/doxygen/doxygen.git
+
+[submodule "Pangolin"]
+	path = Pangolin
+	url = https://github.com/stevenlovegrove/Pangolin.git
+[submodule "thrust"]
+	path = thrust
+	url = https://github.com/NVIDIA/thrust.git
+```
+
 |Libraries|Version|Descriptions
 |  ----  | ----  | ----  |
 |Azure-kinect-Sensor & Azure-kinect-**ROS**-Driver|V1.4.1 & Melodic| Azure-kinect-use|
