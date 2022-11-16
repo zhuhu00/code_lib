@@ -1,4 +1,29 @@
 # Ubuntu的工具记录
+
+## CMake 升级
+正确步骤是：
+
+1. 去 https://cmake.org/files/ 下载所需版本的源码。也可以使用wget下载，例如：
+   ```
+   wget https://cmake.org/files/v3.22/cmake-3.22.1.tar.gz
+   ```
+2. 解压：
+   ```
+   tar -xvzf cmake-3.22.1.tar.gz
+   ```
+3. 进入解压目录，配置成功之后显示：`CMake has bootstrapped. Now run make.`
+   ```
+    chmod 777 ./configure
+    ./configure
+   ```
+4. 配置完成后，编译,安装，测试：
+   ```
+   make
+   sudo make install
+   cmake --version
+   ```
+
+
 ## 0. ZSH install
 1）安装zsh
 ```bash
