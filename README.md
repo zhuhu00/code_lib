@@ -151,6 +151,15 @@ TBA
 
 随后下载头文件 https://raw.githubusercontent.com/bombela/backward-cpp/master/backward.hpp 复制到根目录 `sudo mv backward.hpp /usr/include` 在`CmakeLists.txt->target_link_lib` 后面加个 "dw"
 
+在主程序中：
+```
+#define BACKWARD_HAS_DW 1
+#include "backward.hpp"
+namespace backward{
+    backward::SignalHandling sh;
+}
+```
+
 ## 7. VSCode编译调试ROS
 
 见[vscode_catkin_ws](https://github.com/zhuhu00/vscode_catkin_ws)仓库
