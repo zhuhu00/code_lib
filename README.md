@@ -213,6 +213,8 @@ ubuntu连接是
 
 删除linux中某个用户所有信息:`userdel   -r  用户名`
 
+Using net share to create a share fold: `net usershare add share /home/$USER/ : Everyone:F guest_ok=n`
+
 ## 10. 增加、删除Swap文件
 need **root** permission， add `sudo`
 ```shell
