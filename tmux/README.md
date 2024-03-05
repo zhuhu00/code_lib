@@ -6,7 +6,10 @@ git clone https://github.com/zhuhu00/my_configs.git
 cp -r ./my_configs/tmux ~/.tmux
 ln -s -f ~/.tmux/.tmux.conf ~/.tmux.conf
 cp ./my_configs/tmux/.tmux.conf.local ~
+tmux source-file ~/.tmux.conf
 ```
+
+> 可以开启 mouse 模式, 方便进行选取
 
 Self-contained, pretty and versatile `.tmux.conf` configuration file.
 
