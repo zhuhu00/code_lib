@@ -3,7 +3,7 @@
 > Some useful Ubuntu_tools can be found in [Ubuntu_tools](Ubuntu_tools.md)
 
 - [x] [tmux](./tmux/)
-- [ ] [zsh](./zsh/)
+- [x] [zsh](./zsh/)
 - [ ] [nvim](./vim/)
 
 # 显卡监控
